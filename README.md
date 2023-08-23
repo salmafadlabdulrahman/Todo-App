@@ -30,12 +30,11 @@ Users should be able to:
 - **Bonus**: Drag and drop to reorder items on the list
 
 ### Screenshot
-
-![](./screenshot.jpg)
+![screencapture-127-0-0-1-5500-2023-08-23-19_53_44](https://github.com/salmafadlabdulrahman/Todo-App/assets/88597694/7f3c741d-31b3-4a62-a0a5-96588b9b6b7a)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [](https://github.com/salmafadlabdulrahman/Todo-App)
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
