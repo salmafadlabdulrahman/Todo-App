@@ -52,5 +52,5 @@ Users should be able to:
 I learned how to drag and drop, to enable the users to re-arrange tasks.
 
 ## Author
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/salmafadlabdulrahman)
 
