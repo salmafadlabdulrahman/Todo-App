@@ -34,7 +34,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add live site URL here](https://github.com/salmafadlabdulrahman/Todo-App)
+- Solution URL: [Add live solution URL here](https://github.com/salmafadlabdulrahman/Todo-App)
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
