@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Todo app</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <picture>
+          <source
+            media="(min-width: 700px)"
+            srcset="./images/bg-desktop-dark.jpg"
+            class="desktop-img desktop-dark"
+          />
+
+          <img
+            src="./images/bg-mobile-dark.jpg"
+            alt="an image of a street with purple overlay"
+            class="header-img mobile-dark"
+          />
+        </picture>
+
+        <picture>
+          <source
+            media="(min-width: 700px)"
+            srcset="./images/bg-desktop-light.jpg"
+            class="desktop-img desktop-light hidden"
+          />
+
+          <img
+            src="./images/bg-mobile-light.jpg"
+            alt="an image of a street with purple overlay"
+            class="header-img mobile-light hidden"
+          />
+        </picture>
+
+        <div class="header-content">
+          <h1>Todo</h1>
+          <img src="./images/icon-sun.svg" alt="sun icon" class="sun-icon" />
+          <img
+            src="./images/icon-moon.svg"
+            alt="moon icon"
+            class="moon-icon hidden"
+          />
+        </div>
+      </header>
+
+      <main>
+        <div class="sub-container">
+          <div class="new-todo">
+            <div class="new-todo-fields">
+              <div class="checkbox-field-container">
+                <input type="checkbox" class="first-input" />
+                <label for="checkbox" class="checkbox-label"></label>
+              </div>
+
+              <div class="new-todo-field-container">
+                <input
+                  type="text"
+                  class="todo-field"
+                  name="todo-field"
+                  placeholder="Create a new todo..."
+                />
+                <label for="todo-field"></label>
+              </div>
+            </div>
+          </div>
+
+          <div class="todos-container"></div>
+        </div>
+
+        <h4 class="drag-drop hidden">Drag and drop to reorder list</h4>
+      </main>
+    </div>
+
+    <script src="script.js" type="module"></script>
+  </body>
+</html>

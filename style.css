@@ -1,0 +1,325 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+body {
+  background-color: hsl(235, 21%, 11%);
+  margin: 0 auto;
+  width: 100%;
+  max-width: 100%;
+}
+
+header {
+  width: 100%;
+  max-width: 100%;
+  position: relative;
+}
+
+.header-img,
+source {
+  width: 100%;
+  max-width: 100%;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 1.5em;
+  position: absolute;
+  top: 10px;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  width: 100%;
+}
+
+h1 {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 13px;
+}
+
+.container {
+  position: relative;
+}
+
+header {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+main {
+  border-radius: 5px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding-bottom: 3em;
+  position: relative;
+  z-index: 2;
+  top: 110px;
+  min-height: 100vh;
+}
+
+h4 {
+  margin-top: 2em;
+  color: hsl(233, 14%, 35%);
+  text-align: center;
+}
+
+.sub-container {
+  max-width: 90vw;
+  margin: 0 auto;
+}
+
+.new-todo {
+  background-color: hsl(235, 24%, 19%);
+  border-radius: 5px;
+}
+
+.todo-field.light-theme {
+  color: #000;
+}
+
+.light-theme {
+  background-color: hsl(0, 0%, 98%);
+}
+
+.dark-theme {
+  background-color: hsl(235, 24%, 19%);
+}
+
+.new-todo-fields {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 30px;
+  width: 100%;
+  height: 50px;
+  background-color: hsl(235, 24%, 19%);
+  border-radius: 8px;
+}
+
+.sun-icon,
+.moon-icon {
+  cursor: pointer;
+}
+
+.checkbox-field-container {
+  position: relative;
+}
+
+.todo-field {
+  width: 90%;
+  padding: 1em 0;
+  margin-left: 0.5em;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: transparent;
+}
+
+.todo-field::placeholder {
+  padding-left: 1em;
+}
+
+.new-todo-field-container {
+  width: 100%;
+}
+
+.checkbox-field-container label {
+  background-color: hsl(235, 24%, 19%);
+  border-radius: 50%;
+  border: 1px solid hsl(237, 14%, 26%);
+  cursor: pointer;
+  height: 27px;
+  width: 27px;
+  position: absolute;
+  left: 15px;
+  bottom: -5px;
+}
+
+.checkbox-field-container label:after {
+  border: 2px solid #fff;
+  border-top: none;
+  border-right: none;
+  content: "";
+  height: 6px;
+  left: 7px;
+  opacity: 0;
+  position: absolute;
+  top: 8px;
+  transform: rotate(-45deg);
+  width: 12px;
+}
+
+.checkbox-field-container input[type="checkbox"] {
+  visibility: hidden;
+}
+
+.checkbox-field-container input[type="checkbox"]:checked + label {
+  background: linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+  border-color: hsl(234, 11%, 52%);
+}
+
+.checkbox-field-container input[type="checkbox"]:checked + label:after {
+  opacity: 1;
+}
+
+.todos-container {
+  background-color: hsl(235, 24%, 19%);
+  border-radius: 5px;
+  margin-top: 1em;
+}
+
+.todo-container {
+  display: flex;
+  padding: 1em;
+  border-bottom: 1px solid hsl(237, 14%, 26%);
+}
+
+.todo-container .checkbox-field-container {
+  width: 50px;
+}
+
+.todo-container .checkbox-field-container label {
+  left: 1px;
+  bottom: -1px;
+}
+
+h3 {
+  color: hsl(234, 39%, 85%);
+  font-weight: 400;
+  font-size: 0.8em;
+  width: 80%;
+  padding: 0.3em 0;
+  margin-top: 0.2em;
+  outline: none;
+  cursor: pointer;
+}
+
+.delete-btn {
+  margin-top: 0.3em;
+  margin-left: 0.5em;
+  cursor: pointer;
+  display: block;
+  width: 15px;
+  height: 15px;
+}
+
+.hidden-img {
+  display: none;
+}
+
+.todo-container:hover .hidden-img {
+  display: block;
+}
+
+.todo-info {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.2em;
+}
+
+.items-count,
+.clear-all {
+  color: hsl(233, 14%, 35%);
+}
+
+.items-count {
+  font-size: 0.8em;
+}
+
+.clear-all {
+  cursor: pointer;
+  font-size: 0.9em;
+}
+
+.btns-container {
+  margin-top: 0.5em;
+  background-color: hsl(235, 24%, 19%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  border-radius: 5px;
+  padding: 1em;
+}
+
+.btn {
+  border: none;
+  background: none;
+  color: hsl(233, 14%, 35%);
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: hsl(236, 33%, 92%);
+}
+
+.active {
+  color: hsl(220, 98%, 61%);
+}
+
+.hidden {
+  display: none;
+}
+
+.completed {
+  text-decoration: line-through hsl(234, 11%, 52%) 1px;
+  color: hsl(234, 11%, 52%);
+}
+
+/*Desktop design*/
+@media (min-width: 600px) and (max-width: 699px) {
+  .header-content {
+    padding: 0 2em;
+  }
+  main {
+    top: 150px;
+  }
+}
+
+@media (min-width: 700px) and (max-width: 999px) {
+  .header-content {
+    padding: 0 11em;
+  }
+  .sub-container {
+    width: 70vw;
+    max-width: 50%;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .header-content {
+    padding: 0 20em;
+  }
+  .sub-container {
+    width: 35vw;
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1500px) {
+  .header-content {
+    padding: 0 29em;
+  }
+  .sub-container {
+    width: 35vw;
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 1500px) and (max-width: 2000px) {
+  .header-content {
+    padding: 0 27em;
+  }
+  .sub-container {
+    width: 35vw;
+    max-width: 100%;
+  }
+}
